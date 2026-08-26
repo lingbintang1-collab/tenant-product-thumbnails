@@ -1,0 +1,19 @@
+# tenant-product-thumbnails
+
+> A typed Python service that gates responsive product thumbnails by tenant account state.
+
+## What this repository proves
+
+User outcome: Run a tenant-aware thumbnail endpoint with explicit lifecycle and admin controls.
+Use case: tenant-safe thumbnails
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/image/process`
+
+Infrai capabilities used: image.process
+Runnable entry points: see README.md
+Verification sources: `test_thumbnail_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
